@@ -5,6 +5,11 @@ To set an environment variable, create a file with name `.env` at the same level
 
 The root folder contains the `.env.example`, you can use this file as a reference.
 
+To use your `.env` uncomment in `docker-compose.yml` or `compose.yml` the two lines below if they are present, otherwise add them.
+
+    env_file:
+      - .env
+
 ### CORE_HOST
 The host at which the Cat is running. The parameter is used by Admin Portal to determine the host to connect to.
 
